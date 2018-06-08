@@ -1,5 +1,15 @@
 Magento 2.2 app repo
+
 Pallab das
+
+
+
+
+git push -f origin master
+
+
+
+
 Git task 	Notes 	Git commands
 Tell Git who you are 	Configure the author name and email address to be used with your commits.
 
