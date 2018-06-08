@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+	<acl>
+		<resources>
+			<resource id="Magento_Backend::admin">
+				<resource id="Pdas_Recordreceipt::rrlist" sortOrder="10" title="rrlist">
+					<resource id="Pdas_Recordreceipt::rrlist_save" sortOrder="10" title="Save rrlist"/>
+					<resource id="Pdas_Recordreceipt::rrlist_delete" sortOrder="20" title="Delete rrlist"/>
+					<resource id="Pdas_Recordreceipt::rrlist_update" sortOrder="30" title="Update rrlist"/>
+					<resource id="Pdas_Recordreceipt::rrlist_view" sortOrder="40" title="View rrlist"/>
+				</resource>
+			</resource>
+		</resources>
+	</acl>
+</config>

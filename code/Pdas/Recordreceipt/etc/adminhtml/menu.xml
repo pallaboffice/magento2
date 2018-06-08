@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+		<add id="Pdas::top_level" module="Pdas_Recordreceipt" resource="Magento_Backend::content" sortOrder="9999" title="Pdas"/>
+		<add action="pdas_recordreceipt/rrlist/index" id="Pdas::pdas_recordreceipt_rrlist" module="Pdas_Recordreceipt" parent="Pdas::top_level" resource="Magento_Backend::content" sortOrder="9999" title="rrlist"/>
+	</menu>
+</config>

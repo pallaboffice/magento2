@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<preference for="Pdas\Recordreceipt\Api\RrlistRepositoryInterface" type="Pdas\Recordreceipt\Model\RrlistRepository"/>
+	<preference for="Pdas\Recordreceipt\Api\Data\RrlistInterface" type="Pdas\Recordreceipt\Model\Rrlist"/>
+	<preference for="Pdas\Recordreceipt\Api\Data\RrlistSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+	<virtualType name="Pdas\Recordreceipt\Model\ResourceModel\Rrlist\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+		<arguments>
+			<argument name="mainTable" xsi:type="string">pdas_recordreceipt_rrlist</argument>
+			<argument name="resourceModel" xsi:type="string">Pdas\Recordreceipt\Model\ResourceModel\Rrlist\Collection</argument>
+		</arguments>
+	</virtualType>
+	<type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+		<arguments>
+			<argument name="collections" xsi:type="array">
+				<item name="pdas_recordreceipt_rrlist_grid_data_source" xsi:type="string">Pdas\Recordreceipt\Model\ResourceModel\Rrlist\Grid\Collection</item>
+			</argument>
+		</arguments>
+	</type>
+</config>

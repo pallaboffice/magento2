@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+	<route method="POST" url="/V1/pdas-recordreceipt/rrlist">
+		<service class="Pdas\Recordreceipt\Api\RrlistRepositoryInterface" method="save"/>
+		<resources>
+			<resource ref="Pdas_Recordreceipt::rrlist_save"/>
+		</resources>
+	</route>
+	<route method="GET" url="/V1/pdas-recordreceipt/rrlist/search">
+		<service class="Pdas\Recordreceipt\Api\RrlistRepositoryInterface" method="getList"/>
+		<resources>
+			<resource ref="Pdas_Recordreceipt::rrlist_view"/>
+		</resources>
+	</route>
+	<route method="GET" url="/V1/pdas-recordreceipt/rrlist/:rrlistId">
+		<service class="Pdas\Recordreceipt\Api\RrlistRepositoryInterface" method="getById"/>
+		<resources>
+			<resource ref="Pdas_Recordreceipt::rrlist_view"/>
+		</resources>
+	</route>
+	<route method="PUT" url="/V1/pdas-recordreceipt/rrlist/:rrlistId">
+		<service class="Pdas\Recordreceipt\Api\RrlistRepositoryInterface" method="save"/>
+		<resources>
+			<resource ref="Pdas_Recordreceipt::rrlist_update"/>
+		</resources>
+	</route>
+	<route method="DELETE" url="/V1/pdas-recordreceipt/rrlist/:rrlistId">
+		<service class="Pdas\Recordreceipt\Api\RrlistRepositoryInterface" method="deleteById"/>
+		<resources>
+			<resource ref="Pdas_Recordreceipt::rrlist_delete"/>
+		</resources>
+	</route>
+	<route method="POST" url="/V1/pdas-recordreceipt/rr_api">
+		<service class="Pdas\Recordreceipt\Api\Rr_apiManagementInterface" method="postRr_api"/>
+		<resources>
+			<resource ref="anonymous"/>
+		</resources>
+	</route>
+</routes>

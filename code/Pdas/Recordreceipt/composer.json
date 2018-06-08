@@ -1,0 +1,22 @@
+{
+    "name": "pdas/module-recordreceipt",
+    "description": "Created by pallab das , pallab.office@gmail.com",
+    "type": "magento2-module",
+    "license": "OSL-3.0",
+    "authors": [
+        {
+            "email": "info@mage2gen.com",
+            "name": "Mage2Gen"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Pdas\\Recordreceipt\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

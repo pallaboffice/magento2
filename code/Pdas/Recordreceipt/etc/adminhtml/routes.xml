@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+	<router id="admin">
+		<route frontName="pdas_recordreceipt" id="pdas_recordreceipt">
+			<module before="Magento_Backend" name="Pdas_Recordreceipt"/>
+		</route>
+		<route frontName="rrlist" id="rrlist">
+			<module before="Magento_Backend" name="Pdas_Recordreceipt"/>
+		</route>
+	</router>
+</config>
